@@ -3,14 +3,17 @@ import React, { useState } from "react";
 import './../styles/App.css';
 
 const App = () => {
-  const [count,setCout]=useState(0);
+  const [count,setCount]=useState(0);
 
  console.log(count); 
+ const funn=()=>{
+  setCount(count+1);
+ }
   return (
     <div>
-        {/* Do not remove the main div */}
+        
         <h2>Button clicked {count} times</h2>
-        <button onClick={setCout(count+1)}>Click me</button>
+        <button onClick={funn}>Click me</button>
     </div>
   )
 }
